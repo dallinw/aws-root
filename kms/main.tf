@@ -2,7 +2,7 @@
 resource "aws_kms_key" "default" {
   description             = "KMS default encryption key"
   deletion_window_in_days = 7
-  enable_key_rotation = true
+  enable_key_rotation     = true
 
   tags = merge(
     var.common_tags

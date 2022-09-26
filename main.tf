@@ -1,9 +1,9 @@
 module "ecr" {
-  source = "./ecr"
+  source      = "./ecr"
   common_tags = local.common_tags
 }
 
-#module "kms" {
-#  source = "./kms"
-#  common_tags = local.common_tags
-#}
+module "sso" {
+  source      = "./sso"
+  common_tags = local.common_tags
+}
